@@ -1,0 +1,51 @@
+/firmware
+├── platformio.ini
+├── src/
+│   ├── main.cpp
+│   │
+│   ├── core/
+│   │   ├── ThreadManager.h/.cpp       # Thread pool + task queue execution
+│   │   ├── TaskQueue.h/.cpp           # Priority queue of Task objects
+│   │   ├── Task.h                     # Base task struct, priority enum, completion flags
+│   │   ├── ResourceMutex.h/.cpp       # Amperage-safe mutex combos
+│   │   └── SerialComm.h/.cpp          # Serial listener thread
+│   │
+│   ├── pins/
+│   │   └── PinMap.h                   ✅ done
+│   │
+│   ├── math/
+│   │   ├── Matrix.h/.cpp              # Fixed-size matrix ops (used by Kalman, LQR)
+│   │   ├── Kinematics.h/.cpp          # CoreXY forward/inverse kinematics
+│   │   └── Constants.h               # Physical constants, tuning params, LQR/Kalman matrices
+│   │
+│   ├── control/
+│   │   ├── TrajectoryPlanner.h/.cpp   # Jerk-limited S-curve + ZVD input shaper
+│   │   ├── FeedForward.h/.cpp         # Inverse dynamics τ_ff
+│   │   ├── LQRController.h/.cpp       # LQR + integral state feedback
+│   │   ├── KalmanFilter.h/.cpp        # State estimator [x, ẋ, y, ẏ]
+│   │   └── MotorController.h/.cpp     # Unified control signal dispatcher
+│   │
+│   ├── devices/
+│   │   ├── StepperDriver.h/.cpp       # TB6600 wrapper (NEMA17 + closed-loop)
+│   │   ├── ServoController.h/.cpp     # STS3215 + MG996R abstraction
+│   │   ├── DCMotorDriver.h/.cpp       # L298N H-bridge wrapper
+│   │   ├── LaserSensor.h/.cpp         # TSL1401 line camera + data cleanup
+│   │   ├── LineLaser.h/.cpp           # 5V laser module on/off
+│   │   └── Microswitch.h/.cpp         # Debounced limit switch reader
+│   │
+│   ├── state/
+│   │   ├── MachineState.h/.cpp        # Gantry position, all motor states
+│   │   └── StateSnapshot.h            # Serializable state struct for serial TX
+│   │
+│   ├── operations/
+│   │   ├── Operation.h                # Base class: ordered sequence of Tasks
+│   │   ├── HomeOperation.h/.cpp       # Homing routine
+│   │   ├── TransferOperation.h/.cpp   # Full petri dish transfer sequence
+│   │   └── CalibrationOperation.h/.cpp
+│   │
+│   └── testing/
+│       ├── TestStepper.cpp
+│       ├── TestServo.cpp
+│       ├── TestLQR.cpp
+│       ├── TestKalman.cpp
+│       └── TestSerial.cpp

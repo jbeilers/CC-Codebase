@@ -1,0 +1,98 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredPackages">
+        <list>
+          <option value="altgraph" />
+          <option value="attrs" />
+          <option value="Automat" />
+          <option value="Babel" />
+          <option value="bcrypt" />
+          <option value="blinker" />
+          <option value="cachetools" />
+          <option value="certifi" />
+          <option value="chardet" />
+          <option value="click" />
+          <option value="cloud-init" />
+          <option value="cobs" />
+          <option value="colorama" />
+          <option value="command-not-found" />
+          <option value="configobj" />
+          <option value="constantly" />
+          <option value="cryptography" />
+          <option value="dbus-python" />
+          <option value="distro" />
+          <option value="distro-info" />
+          <option value="httplib2" />
+          <option value="hyperlink" />
+          <option value="idna" />
+          <option value="incremental" />
+          <option value="Jinja2" />
+          <option value="jsonpatch" />
+          <option value="jsonpickle" />
+          <option value="jsonpointer" />
+          <option value="jsonschema" />
+          <option value="launchpadlib" />
+          <option value="lazr.restfulclient" />
+          <option value="lazr.uri" />
+          <option value="markdown-it-py" />
+          <option value="MarkupSafe" />
+          <option value="mdurl" />
+          <option value="netifaces" />
+          <option value="oauthlib" />
+          <option value="observable" />
+          <option value="packaging" />
+          <option value="pros-cli" />
+          <option value="pyasn1" />
+          <option value="pyasn1-modules" />
+          <option value="pycurl" />
+          <option value="Pygments" />
+          <option value="PyGObject" />
+          <option value="PyHamcrest" />
+          <option value="pyinstaller" />
+          <option value="pyinstaller-hooks-contrib" />
+          <option value="PyJWT" />
+          <option value="pyOpenSSL" />
+          <option value="pyparsing" />
+          <option value="pypng" />
+          <option value="pyrsistent" />
+          <option value="pyserial" />
+          <option value="python-apt" />
+          <option value="pytz" />
+          <option value="PyYAML" />
+          <option value="pyzmq" />
+          <option value="requests" />
+          <option value="requests-futures" />
+          <option value="rich" />
+          <option value="rich-click" />
+          <option value="scan-build" />
+          <option value="semantic-version" />
+          <option value="sentry-sdk" />
+          <option value="service-identity" />
+          <option value="setuptools" />
+          <option value="six" />
+          <option value="systemd-python" />
+          <option value="tabulate" />
+          <option value="Twisted" />
+          <option value="typing" />
+          <option value="typing_extensions" />
+          <option value="ubuntu-pro-client" />
+          <option value="unattended-upgrades" />
+          <option value="urllib3" />
+          <option value="wadllib" />
+          <option value="wheel" />
+          <option value="zope.interface" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
